@@ -17,7 +17,6 @@ export default function RootLayout({ children }) {
           <div class="col-span-1 bg-sidebarbackground text-white">
             <Sidebar />
           </div>
-
           <div class="col-span-4">{children}</div>
         </div>
       </body>
