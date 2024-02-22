@@ -22,9 +22,9 @@ function Sidebar() {
           alt="Robo Mascot"
         />
 
-        <ul>
+        <ul className="flex-col">
           {Navitems.map((m, index) => (
-            <li>
+            <li className="py-2">
               <Link href={"/" + m.replace(/\s+/g, "")}> {m} </Link>
             </li>
           ))}
