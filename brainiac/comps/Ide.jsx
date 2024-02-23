@@ -1,5 +1,5 @@
 import React, { useContext } from 'react';
-import { SelectedCourseContext } from '../app/Courses/page';
+import { SelectedCourseContext } from '../app/courses/page';
 
 
 function Ide() {

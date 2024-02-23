@@ -1,6 +1,6 @@
 import React, { useContext } from 'react';
 import Ide from '../../comps/Ide'
-import { SelectedCourseContext } from '../Courses/page'
+import { SelectedCourseContext } from '../courses/page'
 function page() {
  
   return (
