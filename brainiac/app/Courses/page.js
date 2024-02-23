@@ -1,9 +1,32 @@
-import React from 'react'
+'use client'
+import React, { useState, useContext, createContext } from 'react';
 
-function page() {
+// Create a new context
+export const SelectedCourseContext = createContext();
+
+function Page() {
+  const [selectedCourse, setSelectedCourse] = useState(null);
+  const [courses, setCourses] = useState(['Python', 'Java', 'Javascript','Cpp']); // Add the list of courses here
+
+  const handleCourseSelection = (course) => {
+    setSelectedCourse(course);
+  }
+
   return (
-    <div>Courses</div>
+    <SelectedCourseContext.Provider value={selectedCourse}>
+      <div>
+        <div>Courses</div>
+        <div>Selected Course: {selectedCourse}</div>
+        <ul>
+          {courses.map((course, index) => (
+            <li key={index} onClick={() => handleCourseSelection(course)}>
+              {course}
+            </li>
+          ))}
+        </ul>
+      </div>
+    </SelectedCourseContext.Provider>
   )
 }
 
-export default page
+export default Page;
