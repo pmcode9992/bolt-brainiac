@@ -6,7 +6,7 @@ import SidebarRoboface from "../assets/SidebarRoboface.png";
 function Sidebar() {
   const Navitems = [
     "Dashboard",
-    "courses",
+    "Courses",
     "Assessments",
     "AI Tutor",
     "Open IDE",
