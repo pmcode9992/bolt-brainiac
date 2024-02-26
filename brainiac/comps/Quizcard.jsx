@@ -12,6 +12,7 @@ const Quizcard = (props) => {
   const handleSubmit = () => {
     if (selectedOption !== null) {
       props.onAnswer(selectedOption);
+      console.log("Submitted from quizcard");
     }
   };
 
@@ -37,7 +38,6 @@ const Quizcard = (props) => {
             {props.choices2}
           </div>
         )}
-        {/* Add similar checks for other choices */}
         {props.choices3 && (
           <div
             className={`option ${selectedOption === 2 ? 'selected' : ''}`}
