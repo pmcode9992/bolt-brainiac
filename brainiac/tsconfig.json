@@ -27,7 +27,7 @@
     ".next/types/**/*.ts",
     "**/*.ts",
     "**/*.tsx"
-  ],
+, "comps/Chatbot.jsx"  ],
   "exclude": [
     "node_modules"
   ]
